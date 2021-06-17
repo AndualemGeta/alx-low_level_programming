@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s" "$(<main.c)"
+export $CFILE=main.c
