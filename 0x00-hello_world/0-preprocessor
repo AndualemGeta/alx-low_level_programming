@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="main.c"  echo "*** File - $CFILE contents ***"
+CFILE="main.c"  printf " $CFILE "
