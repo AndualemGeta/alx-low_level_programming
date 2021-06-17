@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s" "$CFILE(<0-main.c)"
+printf "%s" "$CFILE(<main.c)"
