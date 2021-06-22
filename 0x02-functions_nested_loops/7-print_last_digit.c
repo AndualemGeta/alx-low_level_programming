@@ -1,15 +1,15 @@
 #include "holberton.h"
 /**
-  * _abs - function that prints the absolute value of a number
-  * @n: takes in an integer
-  * Return: 1 if > 0, 0 if == 0, positive if negative
-  */
-int _abs(int n)
+* print_last_digit - prints the last digit of a number
+* @n: the number to be checker
+* Return: 0 for uppercase, 1 for lowercase
+*/
+int print_last_digit(int n)
 {
-if (n < 0)
-{
-return (n * -1);
-}
-return (n);
-
+int last;
+last = (n % 10);
+if (last < 0)
+last = -last;
+_putchar('0' + last);
+return (last);
 }
