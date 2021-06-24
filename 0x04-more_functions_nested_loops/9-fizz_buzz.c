@@ -16,7 +16,7 @@ multipleoffive = num % 5 == 0;
 multipleofthree = num % 3 == 0;
 if (multipleoffive && multipleofthree)
 {
-printf("Fizz");
+printf("FizzBuzz");
 printf(" ");
 }
 else if (num == 100)
@@ -30,7 +30,7 @@ printf(" ");
 }
 else if (multipleofthree)
 {
-printf("FizzBuzz");
+printf("Fizz");
 printf(" ");
 }
 else
