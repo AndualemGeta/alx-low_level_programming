@@ -1,5 +1,8 @@
 #include "holberton.h"
-
+/**
+** print_numbers - write the numbers
+** Return: no return
+**/
 
 void print_numbers(void)
 {
