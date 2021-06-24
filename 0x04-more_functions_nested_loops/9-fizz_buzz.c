@@ -7,14 +7,14 @@
 int main(void)
 {
 int num = 0;
-int multiplodecinco;
-int multiplodetres;
+int multipleoffive;
+int multipleofthree;
 
 for (num = 1; num <= 100; num++)
 {
-multiplodecinco = num % 5 == 0;
-multiplodetres = num % 3 == 0;
-if (multiplodetres)
+multipleoffive = num % 5 == 0;
+multipleofthree = num % 3 == 0;
+if (multipleofthree)
 {
 printf("Fizz");
 printf(" ");
@@ -23,12 +23,12 @@ else if (num == 100)
 {
 printf("Buzz");
 }
-else if (multiplodecinco)
+else if (multipleoffive)
 {
 printf("Buzz");
 printf(" ");
 }
-else if (multiplodecinco && multiplodetres)
+else if (multipleoffive && multipleofthree)
 {
 printf("FizzBuzz");
 printf(" ");
