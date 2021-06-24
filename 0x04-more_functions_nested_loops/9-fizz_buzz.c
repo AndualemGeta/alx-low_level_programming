@@ -14,7 +14,7 @@ for (num = 1; num <= 100; num++)
 {
 multipleoffive = num % 5 == 0;
 multipleofthree = num % 3 == 0;
-if (multipleofthree)
+if (multipleoffive && multipleofthree)
 {
 printf("Fizz");
 printf(" ");
@@ -28,7 +28,7 @@ else if (multipleoffive)
 printf("Buzz");
 printf(" ");
 }
-else if (multipleoffive && multipleofthree)
+else if (multipleofthree)
 {
 printf("FizzBuzz");
 printf(" ");
