@@ -6,21 +6,21 @@
  **/
 char *rot13(char *s)
 {
- int len;
- int i;
- char input[52] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
- char output[52] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
- 
- for (len = 0; s[len] != '\0'; len++)
- {
- for (i = 0; input[i] != '\0'; i++)
- {
- if (s[len] == input[i])
- {
- s[len] = output[i];
- break;
- }
- }
- }
- return (s);
+int len;
+int i;
+char input[52] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char output[52] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+for (len = 0; s[len] != '\0'; len++)
+{
+for (i = 0; input[i] != '\0'; i++)
+{
+if (s[len] == input[i])
+{
+s[len] = output[i];
+break;
+}
+}
+}
+return (s);
 }
