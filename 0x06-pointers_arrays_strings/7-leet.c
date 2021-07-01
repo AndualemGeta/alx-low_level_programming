@@ -11,9 +11,9 @@ int i;
 char let[10] = "aAeEoOtTlL";
 char num[10] = "4433007711";
 
-for (len = 0; s[len] != '\0'; len++)
+for (len = 0; s[len] != '\n'; len++)
 {
-for (i = 0; let[i] != '\0'; i++)
+for (i = 0; let[i] != '\n'; i++)
 {
 if (s[len] == let[i])
 {
