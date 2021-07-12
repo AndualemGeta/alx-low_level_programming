@@ -16,7 +16,7 @@ if (argc > 2)
 {
 for (a = 1; a < argc; a++)
 {
-res = res * atoi(argv[a]);
+res = res *atoi(argv[a]);
 }
 printf("%d\n", res);
 }
