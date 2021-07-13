@@ -33,7 +33,7 @@ return (0);
 else
 {
 i = _strlen(str);
-a = malloc(i * sizeof(char) + 1);
+a = malloc(i *sizeof(char) + 1);
 if (a == NULL)
 return (0);
 for (j = 0; str[j] != '\0'; j++)

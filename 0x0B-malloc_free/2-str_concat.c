@@ -11,7 +11,9 @@ int _strlen(char *str)
 {
 int i;
 
-for (i = 0; str[i] != '\0'; i++);
+for (i = 0; str[i] != '\0'; i++)
+;
+
 return (i);
 }
 /**
@@ -32,7 +34,7 @@ s2 = "";
 
 lens1 = _strlen(s1);
 lens2 = _strlen(s2);
-a = malloc(((lens1) + (lens2) + 1) * sizeof(char));
+a = malloc(((lens1) +(lens2) +1) * sizeof(char));
 
 if (a == NULL)
 return (NULL);
