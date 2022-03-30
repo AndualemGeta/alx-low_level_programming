@@ -1,21 +1,35 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * print_number - print an integer.
- * @n: input value§
- * Return: Always 0.
+ * print_number - prints the number
+ * @n: input value
+ * Return: number
  */
 void print_number(int n)
 {
-unsigned int number;
-number = n;
-if (n < 0)
-{
-number = number * -1;
-_putchar ('-');
-}
-if (n / 10)
-{
-print_number(number / 10);
-}
-_putchar(number % 10 + '0');
+	unsigned int j, cont = 1;
+	unsigned int var1, num, var2, var3 = 1;
+
+	if (n < 0)
+	{
+		_putchar(45);
+		var2 = n * (-1);
+	}
+	else
+	{
+		var2 = n;
+	}
+	num = var2;
+	while (num > 9)
+	{
+		num = num / 10;
+		cont++;
+		var3 = var3 * 10;
+	}
+	for (j = 1; j <= cont; j++)
+	{
+		var1 = var2 / var3;
+		var2 = var2 % var3;
+		var3 = var3 / 10;
+		_putchar ('0' + var1);
+	}
 }
