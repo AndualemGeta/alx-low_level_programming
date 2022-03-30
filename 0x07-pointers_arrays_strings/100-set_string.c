@@ -1,4 +1,3 @@
-#include "holberton.h"
 /**
  * set_string -  sets a string
  * @s: string to set
